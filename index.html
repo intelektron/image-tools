@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A smart way to resize image according to its aspect ratio. Enter original image size and generate its new width and height.">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta property="og:site_name" content="Vindicator's Kingdom" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vindi Image Tools" />
+    <meta property="og:description" content="Calculate dimensions and aspect ratio" />
+    <meta property="og:image" content="http://image-tools.vindicator.pl/img/og.png" />
+
+    <title>Calculate dimensions and aspect ratio | Vindi Image Tools</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Vindi Image Tools" /></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Proportion changer</a></li>
+            <li><a href="http://vindicator.pl">My kingdom</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row"> 
+        <div class="starter-template col-md-12">
+          <h1>Calculate dimensions and aspect ratio</h1>
+          <div id="ash">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Proportion -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-9552807769169836"
+                 data-ad-slot="9450773536"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-md-3"></div>
+        <div class="col-md-3 cell-in-form">
+          <form role="form" id="in-form">
+            <div class="form-group clearfix">
+              <label for="width">Base width</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="width" placeholder="digits only">
+                <span class="input-group-addon">pixels</span>
+              </div>
+            </div>
+            <div class="form-group clearfix">
+              <label for="height">Base height</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="height" placeholder="digits only">
+                <span class="input-group-addon">pixels</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 cell-out-form">
+            <form role="form" id="out-form">
+            <div class="form-group">
+              <label for="new-width">New width</label>
+              <div class="input-group">
+                <input disabled type="text" class="form-control" id="new-width" placeholder="digits only">
+                <span class="input-group-addon">pixels</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="new-height">New height</label>
+              <div class="input-group">
+                <input disabled type="text" class="form-control" id="new-height" placeholder="digits only">
+                <span class="input-group-addon">pixels</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3" id="aspect-ratio"></div>
+        <div class="col-md-6" id="percentage"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3" id="megapixels-in"></div>
+        <div class="col-md-6" id="megapixels-out"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="presets">
+            <strong>Presets: </strong>
+            <a href="#" data-width="640" data-height="480">VGA</a>,
+            <a href="#" data-width="800" data-height="600">SVGA</a>,
+            <a href="#" data-width="1024" data-height="768">XGA</a>,
+            <a href="#" data-width="1366" data-height="768">WXGA</a>
+            <a href="#" data-width="1280" data-height="720">HD&nbsp;@720</a>,
+            <a href="#" data-width="1920" data-height="1080">Full&nbsp;HD&nbsp;@1080</a>,
+            <a href="#" data-width="851" data-height="315">Facebook&nbsp;Cover</a>,
+            <a href="#" data-width="3456" data-height="2304">DSLR&nbsp;8Mpix</a>
+            <a href="#" data-width="3648" data-height="2736">Compact&nbsp;10Mpix</a>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-3621009-17', 'vindicator.pl');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

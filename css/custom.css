@@ -1,0 +1,50 @@
+body {
+    padding-top: 50px;
+}
+
+.starter-template {
+    padding: 40px 15px 10px 15px;
+    text-align: center;
+}
+
+/*#out-form label {
+    display: block;
+}
+
+#out-form input[type=text] {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#out-form .btn {
+    width: 100px;
+}*/
+
+.input-group  {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.cell-in-form form {
+    margin: 0 0 0 auto;
+}
+
+#presets {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #666;
+}
+
+body .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+body .navbar-brand img {
+    display: block;
+    margin-top: 5px;
+}
+
+#ash {
+    margin: 15px 0;
+}
